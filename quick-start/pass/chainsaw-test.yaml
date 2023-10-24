@@ -1,0 +1,16 @@
+apiVersion: chainsaw.kyverno.io/v1alpha1
+kind: Test
+metadata:
+  name: quick-start-pass
+spec:
+  steps:
+  - spec:
+      delete:
+      - apiVersion: v1
+        kind: ConfigMap
+  - spec:
+      apply:
+      - file: configmap.yaml
+  - spec:
+      assert:
+      - file: configmap-assert.yaml

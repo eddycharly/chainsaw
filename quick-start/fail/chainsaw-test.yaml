@@ -1,0 +1,9 @@
+apiVersion: chainsaw.kyverno.io/v1alpha1
+kind: Test
+metadata:
+  name: quick-start-fail
+spec:
+  steps:
+  - spec:
+      assert:
+      - file: configmap.yaml

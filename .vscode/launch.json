@@ -14,7 +14,10 @@
             "args": [
                 "test",
                 "--test-dir",
-                "./quick-start",
+                "./quick-start/pass",
+                "--timeout",
+                "5s",
+                "--full-name",
             ]
         }
     ]
