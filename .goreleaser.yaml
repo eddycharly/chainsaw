@@ -55,12 +55,13 @@ brews:
     repository:
       # owner: eddycharly
       # name: chainsaw
+      branch: brew-{{.Version}}
       pull_request:
         enabled: true
         draft: true
         base:
-          owner: eddycharly
-          name: chainsaw
+          # owner: eddycharly
+          # name: chainsaw
           branch: main
 
 # brew tap eddycharly/chainsaw https://github.com/eddycharly/chainsaw
