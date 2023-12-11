@@ -53,6 +53,13 @@ brews:
   - repository:
       owner: eddycharly
       name: chainsaw
+      pull_request:
+        enabled: true
+        draft: true
+        base:
+          owner: eddycharly
+          name: chainsaw
+          branch: main
 
 archives:
   - name_template: '{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}'
