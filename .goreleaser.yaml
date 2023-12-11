@@ -50,9 +50,9 @@ docker_signs:
       - --yes
 
 brews:
-  - repository:
-      owner: kyverno
-      name: homebrew-kyverno
+  - repository: {}
+  #     owner: kyverno
+  #     name: homebrew-kyverno
 
 archives:
   - name_template: '{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}'
