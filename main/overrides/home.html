@@ -303,6 +303,30 @@
 						</li>
 						<li class="mdx-expect__item md-typeset">
 							<div class="mdx-expect__icon">
+								{% include ".icons/fontawesome/solid/plus.svg" %}
+							</div>
+							<div class="mdx-expect__description">
+								<h2>Positive testing</h2>
+								<p>
+									Create, update, delete resources and assert your controller reconciles the desired
+									and observed states in the expected way.
+								</p>
+							</div>
+						</li>
+						<li class="mdx-expect__item md-typeset">
+							<div class="mdx-expect__icon">
+								{% include ".icons/fontawesome/solid/minus.svg" %}
+							</div>
+							<div class="mdx-expect__description">
+								<h2>Negative testing</h2>
+								<p>
+									Try submitting invalid resources, invalid changes, or other disallowed actions and
+									make sure they are rejected.
+								</p>
+							</div>
+						</li>
+						<li class="mdx-expect__item md-typeset">
+							<div class="mdx-expect__icon">
 								{% include ".icons/fontawesome/solid/arrows-to-dot.svg" %}
 							</div>
 							<div class="mdx-expect__description">
@@ -398,6 +422,13 @@
 						</cite>
 					</div>
 					<div class="card" style="display: flex; flex-direction: column;">
+						<p class="repo-card" data-repo="open-feature/open-feature-operator"></p>
+						<hr>
+						<cite>
+							Chainsaw replaced Kuttl, helped us improve logging and remove native kubectl calls.
+						</cite>
+					</div>
+					<div class="card" style="display: flex; flex-direction: column;">
 						<p class="repo-card" data-repo="grafana/tempo-operator"></p>
 						<hr>
 						<cite>
@@ -407,13 +438,6 @@
 					</div>
 					<div class="card" style="display: flex; flex-direction: column;">
 						<p class="repo-card" data-repo="linode/cluster-api-provider-linode"></p>
-						<hr>
-						<cite>
-							Chainsaw replaced Kuttl and made our e2e tests much more readable and easier to debug.
-						</cite>
-					</div>
-					<div class="card" style="display: flex; flex-direction: column;">
-						<p class="repo-card" data-repo="linode/provider-ceph"></p>
 						<hr>
 						<cite>
 							Chainsaw replaced Kuttl and made our e2e tests much more readable and easier to debug.
