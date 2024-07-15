@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/kyverno/chainsaw/pkg/apis/v1alpha1"
 	"github.com/kyverno/chainsaw/pkg/discovery"
+	"github.com/kyverno/chainsaw/pkg/model"
 )
 
 type (
@@ -16,11 +16,11 @@ type (
 	relativePathInterface = func(string, string) (string, error)
 )
 
-func Test(config v1alpha1.ConfigurationSpec, test discovery.Test) (string, error) {
+func Test(config model.Configuration, test discovery.Test) (string, error) {
 	if test.Test == nil {
 		return "", errors.New("test must not be nil")
 	}
-	if !config.FullName {
+	if !config.Discovery.FullName {
 		return test.Test.GetName(), nil
 	}
 	return helpTest(test, nil, nil, nil)
