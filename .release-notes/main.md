@@ -24,7 +24,8 @@ Release notes for `TODO`.
 
 ## 📚 Docs 📚
 
-- Added Scenarios documentation
-- Added Sharding documentation
-- Added StepTemplate documentation
-- Added other missing documentation bits
+- Added `Scenarios` documentation
+- Added `StepTemplate` documentation
+- Added `Proxy` helper documentation
+- Added sharding documentation
+- Added other missing documentation bits here and there
